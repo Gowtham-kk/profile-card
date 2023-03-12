@@ -1,0 +1,220 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins'sans-serif;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background:#ecf0f3;
+}
+.wrapper,
+.wrapper .imag-area,
+.Social-icons a,
+.buttons button{
+    background: #ecf0f3;
+    border-radius: 10px;
+    box-shadow:  -3px -3px 7px #ffffff,
+                  3px 3px 5px #ceced1;
+}
+.wrapper{
+    /* background: white;
+    border: 1px solid red; */
+    padding: 30px;
+    width: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+
+}.wrapper .imag-area{
+    height: 150px;
+    width: 150px; 
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.imag-area.inner-area{
+    height: calc(100% - 25px);
+    width: calc(100% - 25px);
+    border-radius: 50%;
+}
+.inner-area img{
+    margin-top: 4%;
+    height: 135px;
+    width: 135px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.wrapper .name{
+    font-size: 20px;
+    font-weight: 500;
+    color: #0a0a0d;
+    margin: 10px 0 5px 0;
+}
+.wrapper .about{
+    font-weight: 400;
+    color: #000000;
+    font-size: 17px;
+    margin-bottom: 10px;
+    font: optional;
+}
+.wrapper.Social-icons{
+    margin: 15px 0 25px 0;
+}
+.Social-icons a{
+height: 40px;
+width: 40px;
+display: inline-flex;
+text-decoration: none;
+margin: 0 5px;
+border-radius: 50%;
+position: relative;
+}
+.Social-icons  :hover::before,
+.buttons .button :hover::before{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: #2870a8;
+    border-radius: 50%;
+    box-shadow:  inset -3px -3px 7px #ffffff,
+                 inset 3px 3px 5px #ceced1;
+}
+.buttons button :hover::before{
+    border-radius: 5px;
+    z-index: -1;
+}
+.Social-icons a i{
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    line-height: 40px;
+    position: relative;
+    z-index: 4;
+}
+    .Social-icons a.fb i{
+        color: #08436d ;
+    }
+    .Social-icons a.yt i{
+        color: #bb0e0e ;
+    }
+    .Social-icons a.insta i{
+        color: #e7254b ;
+    }
+    .Social-icons a.twitter i{
+        color: #3069ec ;
+    }
+.wrapper .buttons{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+
+}
+.buttons button{
+    position: relative;
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 12px 0;
+    font-size: 17px;
+    font-weight: 400;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #31344b;  
+    z-index: 4;
+}
+.buttons button:first-child{
+    margin-right: 20px;
+    margin-top: 20px;
+}
+.buttons button:last-child{
+    margin-right: 10px;
+    margin-top: 20px;
+}
+.Social-share i.far fa-heart{
+    margin-top: 12px;
+}
+.Social-share {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-top: 30px;
+    padding: 0 5px;
+    background-color: #f1f1f2;
+    justify-content: space-between;
+}
+.Social-share .row{
+    color: #000000;
+    font-size: 17px;
+    cursor: pointer;
+position: relative;
+}
+
+.Social-share i.row ::before{
+    position: absolute;
+    content: "";
+    width: 2px;
+    height: 100%;
+    color: #090808;
+    margin-left: -25px;
+}
+.row:first-child::before{
+background: none;
+}
+.Social-share .row i.icon-2{
+    position: absolute;
+    top: 40%;
+    left: 0;
+    transform: translateY(-50%);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 03s ease;
+}
+.row:nth-child(1):hover i.icon-2,
+.row:nth-child(2):hover i.icon-2{
+    opacity: 1;
+    pointer-events: auto;
+}
+/* .wrapper .icon{ */
+    /* height: 25px;
+    width: 25px;
+    line-height: 35px;
+    background: red;
+    color: #31344b;
+    opacity: 0.7;
+    cursor: pointer;
+    position: absolute;
+    top: 25px; */
+/* } */
+.wrapper .wrapperChildArrow{
+    height: 35px;
+    width: 35px;
+    line-height: 35px;
+    /* background: red; */
+    color: #31344b;
+    opacity: 0.7;
+    cursor: pointer;
+    position: absolute;
+    top: 95px;
+    /* display: inline;
+    position: relative; */
+    align-items: center; 
+}
+.wrapper.wrapperChildArrow .arrow{
+    left: 25px;
+    /* margin: 20px; */
+}
+.wrapper.wrapperChildArrow .dots{
+    right: 25px;
+    /* margin: 20px; */
+}
